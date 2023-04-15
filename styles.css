@@ -1,33 +1,46 @@
-/*  your css code here. If applicable */
-img{
-	width: 40px;
-	height: 200px;
-	border-radius: 20px;
+*{
+    margin: 0;
+    padding: 0;
 }
-.last{
-	flex-grow:1;
+body{
+    font-family: Calibri,sans-serif;
 }
-div{
-	display: flex;
-	gap:10px;
-	flex-wrap:wrap;
-	flex-direction: row-reverse;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
- .panel-1{
-	position: absolute;
-	left:0;
-	bottom:350px;
-	color:white;
+.panel{
+    width: 100px;
+    height: 40vh;
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+    border-radius: 20px;
+    flex: 1;
+    background: white no-repeat scroll center;
+    transition: all 0.5s linear;
+    position: relative;
 }
-img{
-	flex-shrink: 1;
+.panel h3{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: white;
+    transition: all 0.5s linear;
 }
-img:hover{
-	/* flex-grow:1;  */
+.active{
+    flex: 6;
 }
-.container > img:hover - img{
-	flex-grow: 0;
+.active h3{
+    left: 30px;
+    top: 150px;
+    text-shadow: 0 0 3px black;
 }
-.container > img:hover{
-	flex-grow:1;
-}
+
+#panel-1{ background-image: url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")}
+#panel-2{ background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")}
+#panel-3{ background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80")}
+#panel-4{ background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80")}
+#panel-5{ background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")}
